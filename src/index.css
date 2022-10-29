@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    width: 100%;
+    
+}
+
+.click{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 76px;
+    margin-top: 8px;
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+}
+.click:hover{
+    background: #D0D5DD;
+}
+.click a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color:#101828;
+    ;
+}
+#click3{
+    text-decoration: none;
+}
+.tooltip{
+    background: #101828;
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+    right: 28%;
+    top: 7%;
+
+}
+.tooltip p{
+    color: white;
+    padding: 10px;
+}
+.click1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    height: 72px;
+    width: 80%;
+    margin: auto;
+}
+.Profile {
+    text-align: center;
+}
+#profile_img{
+    width: 100px;
+    height: 100px;
+}
+.Profile h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+#icon{
+   position: absolute;
+   right: 25%;
+   top: 7%;
+   border: 1.66667px solid #98A2B3;
+   padding: 8px;
+   border-radius: 100%;
+}
+
+#icon1{
+    display: none;
+}
+
+#slack, #Social-icon{
+    margin-left: 20px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+}
+.sub-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84.5%;
+    border: 0.5px dotted #667085;
+}
+.footer hr{
+    width: 84.5%;
+}
+.logo2{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: left;
+    
+}
+.logo3{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: right;
+
+    
+}
+.logo4{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+/* .zuri, .Side{
+    width: 100%;
+} */
+
+/* ------------Mobile View------------ */
+@media only screen and (max-width: 600px) {
+    html{
+        text-align: center;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    #icon{
+        display: none;
+    }
+    .click{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        height: 76px;
+        margin-top: 8px;
+        background: #EAECF0;
+        border: 1px solid #EAECF0;
+        border-radius: 8px;
+        padding: 0 5%;
+    }
+    
+    button{
+        display: block;
+        width: 100%;
+
+    }
+    .click1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        height: 72px;
+        width: 100%;
+        margin: auto;
+        padding: 0 5%;
+    }
+    #icon1{
+        display: block;
+        background: #FFFFFF;
+        border: 1px dashed #D0D5DD;
+        border-radius: 20px;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+    .sub-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 84.5%;
+        border-top: 0.5px solid #667085;
+    }
+    .logo2, .logo3, .logo4{
+        margin-top: 10px;
+    }
+}
