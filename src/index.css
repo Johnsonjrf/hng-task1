@@ -28,6 +28,13 @@
     background: #EAECF0;
     border: 1px solid #EAECF0;
     border-radius: 8px;
+    position: relative;
+}
+.click img{
+    position: absolute;
+    z-index: 1000;
+    right: 10%;
+    
 }
 .click:hover{
     background: #D0D5DD;

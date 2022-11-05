@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.contact{
+    /* min-height: 100vh; */
+    max-width: 100%;
+    box-sizing: border-box;
+    /* margin: auto; */
+    height: 60vh;
+    margin-top: 20vh;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* vertical-align: middle; */
+    
+}
+.pil{
+    
+    margin-left: 10px;
+}
+.fit{
+    margin-bottom: 30px;
+}
+h1{
+    margin-bottom: 20px;
+}
+.subcontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    width: 50%;
+    margin: auto;
+}
+/* input{
+    width: 100%;
+    padding: 5px;
+} */
+#first_name, #last_name, #email, #message, #btn__submit{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray/300;
+    border-radius: 8px;
+    box-shadow: #101828;
+    
+}
+
+
+#btn__submit{
+    background: #1570Ef;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #1570Ef;
+    cursor: pointer;
+}
+#btn__submit:hover{
+    background: #B2DDFF;
+    border: 1px solid #B2DDFF;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid gray/300;  
+}
+.pi{
+    margin-top: 20px;
+}
+.last{
+    margin-top: 10px;
+}
+.flip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subflip{
+    width: 45%;
+}
+.check{
+    display: inline-block;
+    width: 10%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    top: 70px;
+    padding: 2% 5%;
+    border-top: 1px solid gray;
+    margin: auto;
+
+}
+
+
+/* ---------mobile view------------ */
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        /* min-height: 100vh; */
+        max-width: 100%;
+        box-sizing: border-box;
+        /* margin: auto; */
+        height: 100vh;
+        margin: 0;
+        /* margin: auto; */
+        
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* vertical-align: middle; */
+        
+    }
+    
+    .subcontact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        min-height: 100vh;
+    }
+    .flip{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .footer img{
+        width: 40%;
+        margin-top: 20px;
+    }
+    
+
+}

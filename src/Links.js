@@ -1,5 +1,6 @@
 import First from "./first";
 import Logo from "./Logo";
+import { useNavigate } from "react-router-dom";
 
 const Links = () => {
   const user = {
@@ -17,6 +18,11 @@ const Links = () => {
   const logo2 = require("./images/Zuri-Logo.png");
   const logo3 = require("./images/Side.png");
   const logo4 = require("./images/Footer-text.png");
+  const logo5 = require("./images/Icon.png");
+  let navigate = useNavigate();
+  const routeChange = () => {
+    navigate("contact");
+  };
 
   return (
     <div className="links">
@@ -31,6 +37,14 @@ const Links = () => {
         name="Background check for Coders"
       />
       <First href={user.Design} id="book_design" name="Design Books" />
+      <a id="click3" onClick={routeChange}>
+        <div className="click">
+          <a id="click3" onClick={routeChange}>
+            Contact me
+          </a>
+          <img src={logo5} alt="link to share"></img>
+        </div>
+      </a>
 
       <div className="click1">
         <Logo src={logo} alt="My profile" id="slack" />
